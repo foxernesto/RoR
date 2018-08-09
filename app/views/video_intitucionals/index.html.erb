@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Video Intitucionals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Descripcion</th>
+      <th>Link</th>
+      <th>Activo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @video_intitucionals.each do |video_intitucional| %>
+      <tr>
+        <td><%= video_intitucional.nombre %></td>
+        <td><%= video_intitucional.descripcion %></td>
+        <td><%= video_intitucional.link %></td>
+        <td><%= video_intitucional.activo %></td>
+        <td><%= link_to 'Show', video_intitucional %></td>
+        <td><%= link_to 'Edit', edit_video_intitucional_path(video_intitucional) %></td>
+        <td><%= link_to 'Destroy', video_intitucional, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Video Intitucional', new_video_intitucional_path %>

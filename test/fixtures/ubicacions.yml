@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sitio: MyString
+  latitud: 1.5
+  longitud: 1.5
+  activo: false
+
+two:
+  sitio: MyString
+  latitud: 1.5
+  longitud: 1.5
+  activo: false

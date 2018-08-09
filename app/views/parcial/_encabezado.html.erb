@@ -1,0 +1,70 @@
+
+
+        <!-- Inicio de header -->
+            <header class="row">
+                <div class="col s3  ">
+                    <a href="http://www.lacandelaria.gov.co/">
+                        <!-- <img src="img/header/logo_alcaldia.png" alt="logo_alcaldia no disponible" class="right valign-wrapper"> -->
+                        <%= image_tag 'header/logo_alcaldia.png', alt:'logo_alcaldia no disponible', class:'right valign-wrapper' %>
+                    </a>
+                </div>
+                <div class="col s6 ">
+                    <a href="index.html">
+                        <h5 class="center">ALCALDÍA LOCAL LA CANDELARIA</h5>
+                    </a>
+                    <h6 class="center">Alcaldía Mayor de Bogotá D.C.</h6>
+                </div>
+                <div class="col s3 ">
+                    <div class="center row">
+                        <div class="col s12 " >
+                            <div class="row">
+                                <div class="input-field col s12 red-text">
+                                    <i class="red-text material-icons prefix">search</i>
+                                    <input type="text" placeholder="Buscar" class="autocomplete red-text" >
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </header>
+        <!-- Fin de header -->
+
+        <!-- Inicio menu de navegación -->
+        <div class="navbar-fixed divMenuNavegacion">
+            <nav class="hNavegacion red">
+                <div class="nav-wrapper container center">
+                    <ul class="left">
+                        <!-- <li><a href="index.html">Inicio</a></li> -->
+                        <!-- <li><a href="ChatLineaAmiga.html">Chat Linea Amiga</a></li>  -->
+                        <!-- <li><a href="Testimonios.html">Testimonios</a></li>  -->
+                        <!-- <li><a href="AyudaaLaCandelaria.html">Ayuda a la Candelaria</a></li>  -->
+                        <!-- <li><a href="Ubicanos.html">Ubicanos</a></li>  -->
+                        <!-- <li><a href="Videos.html">Videos</a></li>  -->
+                        <!-- <li><a href="Informacion.html">Información</a> </li>  -->
+
+
+                        <li><%= link_to "Testimonio",testimonios_path, target:"_parent" %></li>
+                        <li><%= link_to "Ayuda a la Candelaria",ayuda_localidads_path, target:"_parent" %></li>
+                        <li><%= link_to "Ubicanos",ubicacions_path, target:"_parent" %></li>
+                        <li><%= link_to "Videos",video_intitucionals_path, target:"_parent" %></li>
+                        <li><%= link_to "Información",informacions_path, target:"_parent" %></li>
+
+
+                        <li>
+                            <a href="#" class="dropdown-button red" data-activates="idMenuNavegacion">
+                                Lista de Opciones
+                                <i class="material-icons right">arrow_drop_down</i>
+                            </a>
+                        </li>
+                    </ul>
+                        </div>
+            </nav>            
+            <ul id="idMenuNavegacion" class="dropdown-content">
+                    <li><a href="AyudaaLaCandelaria.html">Ayuda a la Candelaria</a></li>
+                    <li><a href="Ubicanos.html">Ubicanos</a></li>
+                    <li><a href="Videos.html">Videos</a></li>
+                    <li><a href="Informacion.html">Información</a> </li>
+                </ul>            
+        </div>
+        <!-- Fin menu de navegación -->
+ 

@@ -1,0 +1,2 @@
+module VideoIntitucionalsHelper
+end

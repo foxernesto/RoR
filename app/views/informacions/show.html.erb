@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre tecnico:</strong>
+  <%= @informacion.nombre_tecnico %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @informacion.descripcion %>
+</p>
+
+<p>
+  <strong>Nombre altenativo:</strong>
+  <%= @informacion.nombre_altenativo %>
+</p>
+
+<p>
+  <strong>Via consumo:</strong>
+  <%= @informacion.via_consumo %>
+</p>
+
+<p>
+  <strong>Efectos:</strong>
+  <%= @informacion.efectos %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @informacion.link %>
+</p>
+
+<p>
+  <strong>Activo:</strong>
+  <%= @informacion.activo %>
+</p>
+
+<%= link_to 'Edit', edit_informacion_path(@informacion) %> |
+<%= link_to 'Back', informacions_path %>

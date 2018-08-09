@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Informacions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre tecnico</th>
+      <th>Descripcion</th>
+      <th>Nombre altenativo</th>
+      <th>Via consumo</th>
+      <th>Efectos</th>
+      <th>Link</th>
+      <th>Activo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @informacions.each do |informacion| %>
+      <tr>
+        <td><%= informacion.nombre_tecnico %></td>
+        <td><%= informacion.descripcion %></td>
+        <td><%= informacion.nombre_altenativo %></td>
+        <td><%= informacion.via_consumo %></td>
+        <td><%= informacion.efectos %></td>
+        <td><%= informacion.link %></td>
+        <td><%= informacion.activo %></td>
+        <td><%= link_to 'Show', informacion %></td>
+        <td><%= link_to 'Edit', edit_informacion_path(informacion) %></td>
+        <td><%= link_to 'Destroy', informacion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Informacion', new_informacion_path %>

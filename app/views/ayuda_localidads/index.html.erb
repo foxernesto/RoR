@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ayuda Localidads</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mensaje</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ayuda_localidads.each do |ayuda_localidad| %>
+      <tr>
+        <td><%= ayuda_localidad.mensaje %></td>
+        <td><%= link_to 'Show', ayuda_localidad %></td>
+        <td><%= link_to 'Edit', edit_ayuda_localidad_path(ayuda_localidad) %></td>
+        <td><%= link_to 'Destroy', ayuda_localidad, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ayuda Localidad', new_ayuda_localidad_path %>

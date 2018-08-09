@@ -1,0 +1,52 @@
+<%= form_with(model: informacion, local: true) do |form| %>
+  <% if informacion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(informacion.errors.count, "error") %> prohibited this informacion from being saved:</h2>
+
+      <ul>
+      <% informacion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nombre_tecnico %>
+    <%= form.text_field :nombre_tecnico %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion %>
+    <%= form.text_area :descripcion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nombre_altenativo %>
+    <%= form.text_area :nombre_altenativo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :via_consumo %>
+    <%= form.text_area :via_consumo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :efectos %>
+    <%= form.text_area :efectos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :link %>
+    <%= form.text_field :link %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activo %>
+    <%= form.check_box :activo %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

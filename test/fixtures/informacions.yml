@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre_tecnico: MyString
+  descripcion: MyText
+  nombre_altenativo: MyText
+  via_consumo: MyText
+  efectos: MyText
+  link: MyString
+  activo: false
+
+two:
+  nombre_tecnico: MyString
+  descripcion: MyText
+  nombre_altenativo: MyText
+  via_consumo: MyText
+  efectos: MyText
+  link: MyString
+  activo: false
